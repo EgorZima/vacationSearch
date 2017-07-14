@@ -1,0 +1,30 @@
+.container {
+    width: 250px;
+    display: inline-block;
+    margin-left: 200px;
+    margin-right: 40px;
+}
+.nav-sidebar { 
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 20px;  
+    transition: 0.3s;
+}
+
+.nav-sidebar a {
+    color: #636363;
+    border-right: 1px solid #ebebeb;
+    background: #f5f5f2; 
+    font-family: Tahoma;  
+    font-size: 16px;
+    transition: 0.2s;
+}
+.nav-sidebar a:hover {
+    background: #f0f0eb;   
+}
+
+.nav-sidebar a.active  { 
+    border: 1px solid #ebebeb;
+    background: #fcfced;
+    border-right: none;
+}
