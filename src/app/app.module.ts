@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+
+import { SearchService } from './shared/search.service'
+
 import { AppComponent } from './app.component';
 import { CarsComponent } from './components/cars/cars.component';
 import { HotelsComponent } from './components/hotels/hotels.component';
@@ -31,7 +34,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
             { path: '', redirectTo: 'flights', pathMatch: 'full'}
     ])
   ],
-  providers: [],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

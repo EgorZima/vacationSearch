@@ -1,4 +1,4 @@
-.flights {
+.cars {
     display: inline-block;
     width: 434px;
     vertical-align: -50px;
@@ -29,21 +29,7 @@ label {
     display: inline-block;
     width: 200px;
 }
-
-.direction {
-    display: block;
-}
-.from, .to {
-    display: block;
-}
-.from {
-    margin-bottom: 15px;
-}
-.from-input, .to-input {
-    display: inline-block;
-    width: 434px;
-}
-.to-input {
+.car {
     margin-bottom: 20px;
 }
 

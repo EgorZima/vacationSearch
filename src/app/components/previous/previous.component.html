@@ -1,1 +1,14 @@
-previous
+<div *ngIf="searches" class="recent">
+    <h4> PREVIOUS SEARCHES </h4>
+
+    <div *ngFor="let search of searches" class="well">
+        <div class="seacrh">
+            <i class="fa fa-search fa-2x icon" aria-hidden="true"></i>
+            <span class="lead">{{search.startDate}} - </span>
+            <span class="lead">{{search.endDate}}, </span>
+            <span class="lead"> {{search.item}}, </span>
+            <span class="lead"> {{search.item2}}</span>
+            <i class="fa fa-trash pull-right fa-2x" (click)="deleteSearch(search)" aria-hidden="true"></i>
+        </div>   
+    </div>
+</div>

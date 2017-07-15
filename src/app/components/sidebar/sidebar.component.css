@@ -1,8 +1,8 @@
 .container {
     width: 250px;
     display: inline-block;
-    margin-left: 200px;
     margin-right: 40px;
+    
 }
 .nav-sidebar { 
     width: 100%;
@@ -25,6 +25,7 @@
 
 .nav-sidebar a.active  { 
     border: 1px solid #ebebeb;
-    background: #fcfced;
+    background: linear-gradient(to right, #fafae1 0%,#fefff5 100%);
     border-right: none;
+    color:#000;
 }

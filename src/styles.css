@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background: #fcfced;
+    background: #fefff5;
+}
+app-root {
+    display: block;
+    width: 1024px;
+    margin: 0 auto;
 }

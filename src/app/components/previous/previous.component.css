@@ -1,0 +1,15 @@
+.recent {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+}
+
+.seacrh .icon {
+    margin-right: 14px;
+}
+
+.fa-trash:hover {
+    color:#aaa;
+    transition: 0.2s;
+}

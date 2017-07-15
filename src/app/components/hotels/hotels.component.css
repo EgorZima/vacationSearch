@@ -1,4 +1,4 @@
-.flights {
+.hotels {
     display: inline-block;
     width: 434px;
     vertical-align: -50px;
@@ -18,6 +18,27 @@ h1 {
 .start {
     margin-right: 30px;
 }
+
+.start-input, .end-input  {
+    display: inline-block;
+    width: 200px;
+}
+
+.hotel {
+    display: block;
+    margin-bottom: 20px;
+}
+.amenities, .location {
+    display: block;
+}
+.amenities {
+    margin-bottom: 4px;
+}
+.location-input {
+    display: inline-block;
+    width: 434px;
+}
+
 label {
     margin-bottom: -20px;
     margin-left: 4px;
@@ -25,27 +46,6 @@ label {
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
 } 
-.start-input, .end-input  {
-    display: inline-block;
-    width: 200px;
-}
-
-.direction {
-    display: block;
-}
-.from, .to {
-    display: block;
-}
-.from {
-    margin-bottom: 15px;
-}
-.from-input, .to-input {
-    display: inline-block;
-    width: 434px;
-}
-.to-input {
-    margin-bottom: 20px;
-}
 
 .container {
     width: 434px;

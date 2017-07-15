@@ -1,1 +1,42 @@
-hotels
+<div class="hotels">
+  <h1> HOTELS </h1>
+  <div class="start">
+      <label> START DATE </label>
+      <br/>
+      <input class="start-input form-control" [(ngModel)]="startDate" [ngModel]="startDate | date:'yyyy-MM-dd'" (ngModelChange)="startDate = $event" type="date" name="startDate"/>
+  </div>
+
+  <div class="end">
+      <label> END DATE </label>   
+      <br/> 
+      <input class="end-input form-control" [(ngModel)]="endDate" [ngModel]="startDate | date:'yyyy-MM-dd'" (ngModelChange)="startDate = $event" type="date" name="startDate"/>
+  </div>
+
+
+  <div class="hotel">
+      <div class="amenities">
+         <div class="form-group">
+            <label> AMENITIES </label>
+            <select [(ngModel)]="amenities" class="form-control">
+               <option *ngFor="let star of stars">{{star}}</option>
+            </select>
+         </div>
+      </div>
+
+      <div class="location">
+         <label> LOCATION </label>
+         <br/>
+         <input class="location-input form-control" [(ngModel)]="location"/>
+      </div>
+   </div>
+
+    <div class="container">
+      <button type="button" class="btn btn-primary pull-right" (click)="search()">Search</button>
+      <button type="button" class="btn clear pull-right" (click)="clear()">Clear</button>
+    </div>
+</div>
+
+
+
+
+

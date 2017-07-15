@@ -1,1 +1,37 @@
-cars
+<div class="cars">
+  <h1> CARS </h1>
+  <div class="start">
+      <label> START DATE </label>
+      <br/>
+      <input class="start-input form-control" [(ngModel)]="startDate" [ngModel]="startDate | date:'yyyy-MM-dd'" (ngModelChange)="startDate = $event" type="date" name="startDate"/>
+  </div>
+
+  <div class="end">
+      <label> END DATE </label>   
+      <br/> 
+      <input class="end-input form-control" [(ngModel)]="endDate" [ngModel]="startDate | date:'yyyy-MM-dd'" (ngModelChange)="startDate = $event" type="date" name="startDate"/>
+  </div>
+
+  <div class="car">
+      <div class="amenities">
+         <div class="form-group">
+            <label> TYPE </label>
+            <select [(ngModel)]="type" class="form-control">
+               <option *ngFor="let type of types">{{type}}</option>
+            </select>
+         </div>
+      </div>
+
+      <div class="location">
+         <label> LOCATION </label>
+         <br/>
+         <input class="location-input form-control" [(ngModel)]="location"/>
+      </div>
+   </div>
+
+    <div class="container">
+      <button type="button" class="btn btn-primary pull-right" (click)="search()">Search</button>
+      <button type="button" class="btn clear pull-right" (click)="clear()">Clear</button>
+    </div>
+</div>
+
